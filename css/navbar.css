@@ -2,7 +2,6 @@
 
 .container-fluid {
   padding-left: 0px;
-  padding-right: 0px;
 }
 
 .pull-left img {
@@ -36,8 +35,8 @@
 .banner-subscribe-to {
   width: 175px;
 }
-.wrapper { 
-  margin: 0 auto; 
+.wrapper {
+  margin: 0 auto;
 }
 
 .banner-subscribe-to p {
@@ -51,7 +50,7 @@
   width: 65px;
   vertical-align:middle;
   text-align: left;
-  float: left; 
+  float: left;
 }
 
 .banner-subscribe-to span {
@@ -305,13 +304,3 @@ form .form-submit:hover {
 }
 
 /* ----------------------- */
-
-
-
-
-
-
-
-
-
-
