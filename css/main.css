@@ -6,7 +6,24 @@
   padding-right: 0;
 }
 
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%
+}
+
+.info-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 125px;
+  bottom: 0;
+}
+
 .headline-caption {
+  background-image: linear-gradient(to bottom,rgba(255,255,255,.5) 0,#fff 50%,#fff 100%);
   padding: 20px 0;
   display: flex;
   flex-direction: column;
@@ -14,8 +31,14 @@
   text-align: center;
 }
 
-#main-headline {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(128,128,128,1)), color-stop(33%, rgba(235,235,235,1)), color-stop(39%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1))); /* safari4+,chrome */
+
+
+.headline-caption .secondary-headline {
+  background-image: none;
+}
+
+.content {
+  position: relative;
 }
 
 .headline-caption #country {
@@ -53,6 +76,7 @@
     text-align: center;
     align-content: center;
     padding-bottom: 50px;
+    padding-right: 0px;
     background-color: #f2f2f2;
   }
   .news-container ul {
@@ -89,9 +113,16 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 20px;
   border-top: 1px solid #e3e3e3;
   border-bottom: 1px solid #e3e3e3;
-  padding: 10px 5px 10px 20px;
+  padding: 10px 15px 10px 20px;
+}
+
+.vertical-line {
+  border-left: 1px solid #e3e3e3;
+  margin: 0 10px;
+
 }
 
 .secondary-container img {
@@ -100,25 +131,34 @@
 
 .secondary-news {
   margin: 0 auto;
-  padding: 0px;
+  padding: 0;
+}
+
+.news-1 {
+  border: 1px solid #e3e3e3;
 }
 
 .news-2 {
-  background-color: #ccf5ff;
-  margin-left: 20px;
+  background-color: #e6ffff;
+  border: 1px solid #cdf0ff;
+
 }
 
 @media screen and (max-width: 768px) {
+  .info-wrapper {
+    position: relative;
+  }
   .secondary-container {
     flex-direction: column;
   }
-  .secondary-news.news-1 {
+  .news-1 {
     border-bottom: 1px solid #e3e3e3;
     margin-bottom: 10px;
+
   }
-  .secondary-news.news-2 {
+  .news-2 {
+    margin: 0 auto;
     border-left: none;
-    margin-left: 0;
   }
 }
 
@@ -130,9 +170,14 @@
 
 #news-button {
   text-align: center;
-  width: 80%;
-  height: 45px;
+  width: 70%;
+  padding: 15px 0;
+  color: #757575;
   margin: auto;
+}
+
+#news-button:hover {
+  opacity: .6;
 }
 
 .headlines {
